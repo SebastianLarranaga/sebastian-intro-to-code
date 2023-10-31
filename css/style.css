@@ -1,5 +1,12 @@
 /* last rule wins! more specific selector wins! */
 
+/* custom properties */
+    :root {
+        --dark-blue: #2a315f;
+        --med-blue: #6675d3;
+        --gold: #ffb859;
+    }
+    
 * {
     box-sizing: border-box;
 }
@@ -17,7 +24,7 @@ img {
 
 
 body {
-    background: #2A315F;
+    background: var(--med-blue);
     color: #fff;
     font-family: 'Open Sans', sans-serif;
 }
@@ -98,7 +105,7 @@ h3 {
 .button {
     color: white;
     text-decoration: none;
-    background: #FFB859;
+    background: var(--gold);
     padding: 8px 20px;
     display: inline-block;
     border-radius: 15px;
